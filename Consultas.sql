@@ -33,3 +33,9 @@
 
  	--3) por ultimo vamos agregar nuestra detalle de orden.
  	App\OrderDetail::create(['book_id'=>$book->id, 'order_id'=>$order->id, 'quantity'=>5]);
+
+
+ 	$orderDetail = new App\orderDetail();
+ 	$order = App\Order::find(1);
+ 	$client = App\Client::find(1);
+ 	$book = App\Book::find(1);
