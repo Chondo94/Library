@@ -17,9 +17,11 @@ Route::get('/', function () {
 
 Route::resource('book', 'BookController');
 Route::resource('client', 'ClientController');
-Route::resource('subject', 'SubjectController');
+Route::resource('order', 'OrderController');
 Route::resource('period', 'SubjectYearController');
 
-Route::get('/insert', function () {
-    return view('insert');
-});
+Route::get('/add/{book_id}', 'OrderController@add');
+
+// Route::get('/insert', function () {
+//     return view('insert');
+// });
