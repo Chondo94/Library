@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration
             $table->string('order_number', 50);
             $table->DateTime('loan_date');
             $table->DateTime('delivery_date');
-            $table->boolean('state_order');
+            $table->string('state_order');
             $table->bigInteger('client_id')->unsigned();
             $table->timestamps();
 

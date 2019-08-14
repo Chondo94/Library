@@ -11,30 +11,31 @@
         <div class="column is-narrow">
         <input type="submit" value="Libros" class="button is-black is-medium is-fullwidth is-rounded">
         <br>
-        <table class="table  is-striped is-narrow is-hoverable is-fullwidt">
-          <tr>
-            <th>Nombre</th>
-            <th>Autor</th>
-            <th>Paginas</th>
-            <th>Libros Totales</th>
-            <th>Libros Diponibles</th>
-            <th></th>
-            <th></th>
-          </tr>
+        <div class="box">
 
-          @foreach($book as $book) <!--la primero "student" es la variable que se creo en el controlador index. -->
+   @foreach($book as $book)
 
-          <tr>
-            <td>{{ $book->name }}</td>
-            <td>{{ $book->autor }}</td>
-            <td>{{ $book->page }}</td>
-            <td>{{ $book->total_copies }}</td>
-            <td>{{ $book->available_copies}}</td>
-            <td><a href="{{ route('book.show', $book->id) }}" class="button is-dark">Detalle</a></td>
-          </tr>
 
-          @endforeach
-        </table>
+   <article class="media">
+     <div class="media-left">
+       <figure class="image is-64x64">
+         <img src="img/{{ $book->img }}">
+       </figure>
+     </div>
+     <div class="media-content">
+       <div class="content">
+         <p>
+           <strong>{{ $book->name }}</strong> <small>.</small> <small>Paginas: {{ $book->page }}</small>
+           <br><span class="tag is-info">{{ $book->autor }}</span> <br>
+           Copias:{{ $book->total_copies }}<br>
+           Disponibles:{{ $book->available_copies }}        </p>
+           <a  href="{{ route('book.show', $book->id) }}" class = 'button  is-success  is-outline'><span>Editar</span></a>      </div>
+
+         </div>
+       </article>
+
+       @endforeach
+     </div>
 
         <div class="has-text-centered">
           <a href="{{ route('book.create') }}"><h1 class="button is-active is-medium is-rounded has-text-centered">Registrar</h1></a>
@@ -42,5 +43,6 @@
       </div>
     </div>
       </section>
+
   </body>
 </html>

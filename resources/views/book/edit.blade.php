@@ -19,6 +19,11 @@
 
         <div class="field">
           <div class="control">
+            <input type="file" name="img" class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre de libros"><br>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
         <input type="text" name="name" value="{{$book->name}}" class="input is-primary is-large has-text-centered is-rounded" required placeholder""><br>
           </div>
         </div>
