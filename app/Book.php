@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-  protected $fillable = ['img', 'name', 'autor', 'page', 'total_copies', 'available_copies'];
+  protected $fillable = ['name', 'autor', 'page', 'total_copies', 'available_copies'];
 
   /**
   * esta funcion sirve para hacer referencia a la tabla hijo que seria

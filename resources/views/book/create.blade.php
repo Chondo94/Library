@@ -16,11 +16,6 @@
         {{ csrf_field() }}
         <div class="field">
           <div class="control">
-            <input type="file" name="img"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Agregar Imagen"><br>
-          </div>
-        </div>
-        <div class="field">
-          <div class="control">
             <input type="text" name="name"  class="input is-primary is-large has-text-centered is-rounded" required placeholder="Nombre"><br>
           </div>
         </div>
