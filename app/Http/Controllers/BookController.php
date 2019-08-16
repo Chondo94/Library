@@ -8,8 +8,7 @@ use App\Book;
 class BookController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Mostrar una lista del los libros.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -19,8 +18,7 @@ class BookController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
+     * Mostrar el formulario para crear un nuevo Libro.
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -29,8 +27,7 @@ class BookController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
+     *Almacene un Libro recién creado en el almacenamiento.
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -41,8 +38,7 @@ class BookController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
+     * Mostrar el Libro especificado.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -53,8 +49,7 @@ class BookController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
+     * Mostrar el formulario para editar el libro especificado.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -65,8 +60,7 @@ class BookController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
+     * Actualiza el libro especificado en el almacenamiento.
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -79,8 +73,7 @@ class BookController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Eliminar el libro especificado del almacenamiento.
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
