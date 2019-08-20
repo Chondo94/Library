@@ -6,36 +6,38 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateOrdersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
+  /**
+  * Run the migrations.
+  * Se crea la tabla orders con los siguientes campos y se realiza relacionan la
+  * llave forean que hacer ferencia a clientes.
+  * @return void
+  */
+  public function up()
+  {
+    Schema::create('orders', function (Blueprint $table)
     {
-        Schema::create('orders', function (Blueprint $table) {
-            $table->bigIncrements('id');
+      $table->bigIncrements('id');
 
-            $table->string('order_number', 50);
-            $table->DateTime('loan_date');
-            $table->DateTime('delivery_date');
-            $table->string('state_order');
-            $table->bigInteger('client_id')->unsigned();
-            $table->timestamps();
+      $table->string('order_number', 50);
+      $table->DateTime('loan_date');
+      $table->DateTime('delivery_date');
+      $table->string('state_order');
+      $table->bigInteger('client_id')->unsigned();
+      $table->timestamps();
 
-            $table->foreign('client_id')->references('id')->on('clients');
-          });
+      $table->foreign('client_id')->references('id')->on('clients');
+    });
 
 
-    }
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('orders');
-    }
+  /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+  public function down()
+  {
+    Schema::dropIfExists('orders');
+  }
 }

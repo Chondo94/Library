@@ -6,30 +6,31 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateClientsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
+  /**
+  * Run the migrations.
+  * Se crea la tabla clients con los siguientes campos.
+  * @return void
+  */
+  public function up()
+  {
+    Schema::create('clients', function (Blueprint $table)
     {
-        Schema::create('clients', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('code', 45);
-            $table->string('fullname', 50);
-            $table->date('birthdate');
-            $table->boolean('is_active');
-            $table->timestamps();
-        });
-    }
+      $table->bigIncrements('id');
+      $table->string('code', 45);
+      $table->string('fullname', 50);
+      $table->date('birthdate');
+      $table->boolean('is_active');
+      $table->timestamps();
+    });
+  }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('clients');
-    }
+  /**
+  * Reverse the migrations.
+  *
+  * @return void
+  */
+  public function down()
+  {
+    Schema::dropIfExists('clients');
+  }
 }

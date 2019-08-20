@@ -3,7 +3,10 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+/**
+ * @autor Edgar B.C
+ * @Class Order tiene realacion con la tabla orders de la base de datos library.
+ */
 class Order extends Model
 {
 
