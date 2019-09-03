@@ -25,3 +25,7 @@ Route::get('/add/{book_id}', 'OrderController@add');
 // Route::get('/insert', function () {
 //     return view('insert');
 // });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

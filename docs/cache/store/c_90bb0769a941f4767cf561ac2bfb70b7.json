@@ -1,0 +1,182 @@
+{
+    "name": "App\\Book",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "autor": [
+            [
+                "Edgar",
+                "B.C"
+            ]
+        ],
+        "Class": [
+            [
+                "Book",
+                "tiene",
+                "realacion",
+                "con",
+                "la",
+                "tabla",
+                "books",
+                "de",
+                "la",
+                "base",
+                "de",
+                "datos",
+                "library."
+            ]
+        ]
+    },
+    "namespace": "App",
+    "file": "C:\\Users\\estua\\Documents\\laravel\\library\/app\\Book.php",
+    "relative_file": null,
+    "hash": "406c9f5d04544352d353c5072b3dda5ac42c12e4",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "name",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "autor",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "page",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "total_copies",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "available_copies",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 12,
+                            "endLine": 12
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 12,
+                    "endLine": 12,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "orderDetail": {
+            "name": "orderDetail",
+            "line": 18,
+            "short_desc": "esta funcion sirve para hacer referencia a la tabla hijo que seria la tabla OrderDetail",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "function": [
+                    [
+                        "orderDetail"
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

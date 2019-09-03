@@ -1,0 +1,190 @@
+{
+    "name": "App\\Order",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "autor": [
+            [
+                "Edgar",
+                "B.C"
+            ]
+        ],
+        "Class": [
+            [
+                "Order",
+                "tiene",
+                "realacion",
+                "con",
+                "la",
+                "tabla",
+                "orders",
+                "de",
+                "la",
+                "base",
+                "de",
+                "datos",
+                "library."
+            ]
+        ]
+    },
+    "namespace": "App",
+    "file": "C:\\Users\\estua\\Documents\\laravel\\library\/app\\Order.php",
+    "relative_file": null,
+    "hash": "090f90a9cf93521a25cb20a8f8b65980cdce3cab",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 13,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "client_id",
+                            "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "order_number",
+                            "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "loan_date",
+                            "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "delivery_date",
+                            "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "state_order",
+                            "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 13,
+                    "endLine": 13,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "client": {
+            "name": "client",
+            "line": 19,
+            "short_desc": "Esta funcion sirve para hacer referencia a la tabla padre que seria\nla de client ya que en este caso la tabla clien es padre de order.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "orderDetail": {
+            "name": "orderDetail",
+            "line": 27,
+            "short_desc": "Esta funcion sirve para hacer referencia a la tabla hijo que\nseria hijo de la tabla Order.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
